@@ -1,1 +1,7 @@
+# ignore
 node_modules
+tmp/*
+
+# exceptions
+!tmp/.gitkeep
+
