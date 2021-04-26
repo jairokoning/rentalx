@@ -6,7 +6,7 @@ import {
 } from '../ISpecificationsRepository';
 
 class SpecificationsRepositoryInMemory implements ISpecificationsRepository {
-  specifications: Specification[];
+  specifications: Specification[] = [];
 
   async create({ name, description }: ICreateSpecificationDTO): Promise<void> {
     const specification = new Specification();
